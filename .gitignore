@@ -5,8 +5,14 @@ __pycache__/
 
 # C extensions
 *.so
-data
-/data
+
+# Data files - keep structure but ignore data
+data/
+*.csv
+*.json
+*.parquet
+*.h5
+*.hdf5
 # Distribution / packaging
 .Python
 build/
@@ -206,3 +212,57 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ML/AI and Predictive Maintenance specific files
+# MLflow tracking
+mlflow.db
+mlruns/
+mlflow-runs/
+.mlflow/
+
+# Model artifacts and weights
+models/
+*.pkl
+*.joblib
+*.h5
+*.pb
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Experiment tracking
+runs/
+outputs/
+logs/
+wandb/
+tensorboard_logs/
+tb_logs/
+
+# Checkpoints
+checkpoints/
+.checkpoints/
+
+# Temporary processing files
+temp_processing/
+temp/
+*.tmp
+
+# Jupyter notebook outputs and metadata
+*.ipynb_checkpoints/
+.jupyter_cache/
+
+# Python cache and compiled files
+*.pyc
+__pycache__/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Environment and config files with secrets
+.env.local
+config.json
+secrets.json
