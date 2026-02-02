@@ -222,6 +222,7 @@ mlflow-runs/
 
 # Model artifacts and weights
 models/
+models
 *.pkl
 *.joblib
 *.h5
